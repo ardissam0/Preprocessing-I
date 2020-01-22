@@ -163,6 +163,7 @@ header a {
   border: 1.5px solid #ffffff;
   padding: 1%;
   border-radius: 10%;
+  text-align: center;
 }
 .Home {
   width: 100%;
@@ -195,39 +196,62 @@ header a {
 }
 .Intro p {
   font-size: 1.2rem;
+  line-height: 2;
 }
-.Skills {
+.Important-contain {
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 500px) {
+  .Important-contain {
+    flex-direction: column;
+    width: 100%;
+  }
+}
+.Important-contain .Skills {
   border: 3px solid #bcd1f1;
   padding: 3%;
   margin-top: 3%;
   margin-bottom: 1%;
+  width: 49%;
 }
-.Skills h2 {
+@media (max-width: 500px) {
+  .Important-contain .Skills {
+    width: 100%;
+  }
+}
+.Important-contain .Skills h2 {
   margin-bottom: 2%;
 }
-.Skills ul {
+.Important-contain .Skills ul {
   list-style: disc;
   font-size: 1.2rem;
   margin-left: 2%;
 }
-.Skills li {
+.Important-contain .Skills li {
   margin-bottom: 1.5%;
 }
-.Work {
+.Important-contain .Work {
   border: 3px solid #bcd1f1;
   padding: 3%;
   margin-top: 3%;
   margin-bottom: 1%;
+  width: 49%;
 }
-.Work h2 {
+@media (max-width: 500px) {
+  .Important-contain .Work {
+    width: 100%;
+  }
+}
+.Important-contain .Work h2 {
   margin-bottom: 2%;
 }
-.Work ol {
+.Important-contain .Work ol {
   margin-left: 2%;
   list-style: decimal;
   font-size: 1.2rem;
 }
-.Work li {
+.Important-contain .Work li {
   margin-bottom: 1.5%;
 }
 .Contactme {

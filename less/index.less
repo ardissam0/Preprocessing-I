@@ -92,15 +92,16 @@ header {
 	nav {
 		display: flex;
 		justify-content: space-between;
-	}
+		}	
 
-	a {
-		font-size: 1.5rem;
-		text-decoration: none;
-		color: @Seond-color;
-		border: 1.5px solid @Seond-color;
-		padding: 1%;
-		border-radius: 10%;
+		a {
+			font-size: 1.5rem;
+			text-decoration: none;
+			color: @Seond-color;
+			border: 1.5px solid @Seond-color;
+			padding: 1%;
+			border-radius: 10%;
+			text-align: center;
 	}
 }
 
@@ -138,45 +139,62 @@ header {
 
 	p {
 		font-size: 1.2rem;
+		line-height: 2;
 	}
 }
+.Important-contain {
+	display: flex;
+	justify-content: space-between;
 
-.Skills {
-	.Borderbox();
-
-	h2 {
-		.MarginH();
+	@media (max-width: 500px){
+		flex-direction: column;
+		width: 100%;
 	}
 
-	ul {
-		list-style: disc;
-		font-size: 1.2rem;
-		margin-left: 2%;
+	.Skills {
+		@media (max-width: 500px){
+			width: 100%;
+		}
+		.Borderbox();
+		width: 49%;
+		
+		h2 {
+			.MarginH();
+		}
+
+		ul {
+			list-style: disc;
+			font-size: 1.2rem;
+			margin-left: 2%;
+		}
+
+		li {
+			margin-bottom: 1.5%;
+		}
 	}
 
-	li {
-		margin-bottom: 1.5%;
+	.Work {
+		@media (max-width: 500px){
+			width: 100%;
+		}
+		.Borderbox();
+		width: 49%;
+
+		h2 {
+			.MarginH();
+		}
+
+		ol {
+			margin-left: 2%;
+			list-style: decimal;
+			font-size: 1.2rem;
+		}
+
+		li {
+			margin-bottom: 1.5%;
+		}
 	}
 }
-
-.Work {
-	.Borderbox();
-
-	h2 {
-		.MarginH();
-	}
-
-	ol {
-		margin-left: 2%;
-		list-style: decimal;
-		font-size: 1.2rem;
-	}
-
-	li {
-		margin-bottom: 1.5%;
-	}
-}
-
 .Contactme {
 	.Borderbox();
 
