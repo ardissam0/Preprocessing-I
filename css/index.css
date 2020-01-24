@@ -1,1 +1,280 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+/*Start of CSS styling for Resume*/
+.MarginH {
+  margin-bottom: 2%;
+}
+body {
+  font-size: 62.5%;
+  padding: 0 3%;
+}
+h1,
+h2,
+h3 {
+  font-size: 2rem;
+}
+header {
+  width: 100%;
+  background-color: #bcd1f1;
+  padding: 3%;
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+}
+header a {
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: #ffffff;
+  border: 1.5px solid #ffffff;
+  padding: 1%;
+  border-radius: 10%;
+  text-align: center;
+}
+.Home {
+  width: 100%;
+  background-color: #bcd1f1;
+  display: flex;
+}
+.Home img {
+  height: 30vh;
+  margin: 2%;
+}
+.Home .profile {
+  display: flex;
+  flex-direction: column;
+}
+.Home .profile h1 {
+  margin-top: 3%;
+  margin-bottom: 3%;
+}
+.Home .profile p {
+  font-size: 1.2rem;
+}
+.Intro {
+  border: 3px solid #bcd1f1;
+  padding: 3%;
+  margin-top: 3%;
+  margin-bottom: 1%;
+}
+.Intro h2 {
+  margin-bottom: 2%;
+}
+.Intro p {
+  font-size: 1.2rem;
+  line-height: 2;
+}
+.Important-contain {
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 500px) {
+  .Important-contain {
+    flex-direction: column;
+    width: 100%;
+  }
+}
+.Important-contain .Skills {
+  border: 3px solid #bcd1f1;
+  padding: 3%;
+  margin-top: 3%;
+  margin-bottom: 1%;
+  width: 49%;
+}
+@media (max-width: 500px) {
+  .Important-contain .Skills {
+    width: 100%;
+  }
+}
+.Important-contain .Skills h2 {
+  margin-bottom: 2%;
+}
+.Important-contain .Skills ul {
+  list-style: disc;
+  font-size: 1.2rem;
+  margin-left: 2%;
+}
+.Important-contain .Skills li {
+  margin-bottom: 1.5%;
+}
+.Important-contain .Work {
+  border: 3px solid #bcd1f1;
+  padding: 3%;
+  margin-top: 3%;
+  margin-bottom: 1%;
+  width: 49%;
+}
+@media (max-width: 500px) {
+  .Important-contain .Work {
+    width: 100%;
+  }
+}
+.Important-contain .Work h2 {
+  margin-bottom: 2%;
+}
+.Important-contain .Work ol {
+  margin-left: 2%;
+  list-style: decimal;
+  font-size: 1.2rem;
+}
+.Important-contain .Work li {
+  margin-bottom: 1.5%;
+}
+.Contactme {
+  border: 3px solid #bcd1f1;
+  padding: 3%;
+  margin-top: 3%;
+  margin-bottom: 1%;
+}
+.Contactme h2 {
+  margin-bottom: 2%;
+}
+.Contactme address {
+  font-size: 1.2rem;
+  margin-bottom: 1%;
+  line-height: 1.3;
+}
+.Contactme p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+footer {
+  font-size: 1.1rem;
+  text-align: center;
+  margin-top: 8%;
+  margin-bottom: 4%;
+}
